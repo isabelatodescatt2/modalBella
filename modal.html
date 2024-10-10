@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <img src="imgs/logoBella.png" alt="Logo">
+        </div>
+        <div class="navLinks">
+            <p>Home</p> <p>Entrar</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <img id="imgSemiFundo" src="imgs/fade.png" alt="">
+        <div>
+            <iframe id="melhorMusicaDoMundo" src="https://www.youtube.com/embed/yXn63vmYUO0?si=OUl1XH5IRuwJIei6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="infos">
+            <img src="imgs/bellalogo2.png" alt="">
+            <p id="text">
+                A Bella e o Olmo da Bruxa é uma banda de rock alternativo que vem ganhando destaque na cena musical de Porto Alegre e do Rio Grande do Sul, 
+                graças à sua mistura de estilos que combina indie rock, emo e elementos da música brasileira, resultando em um som original e envolvente. 
+                Formada por Pedro Acosta, Felipe Pacheco, Julia Garcia e Ricardo De Carli, a banda tem se mantido 
+                independente, lançando singles e EPs bem recebidos pela crítica. Bella e o Olmo da Bruxa promete uma trajetória 
+                promissora, e os fãs podem acompanhar suas músicas nas plataformas digitais, assistir aos clipes e seguir a banda nas redes sociais para 
+                ficar por dentro das novidades.
+            </p>
+            <button id="open-modal-button">saber mais</button>
+        </div>
+    </div>
+
+    <div class="infos2">
+        <img src="imgs/bellalogo2.png" alt="">
+    
+        <div class="scroll-container">
+            <button class="scroll-btn left" onclick="scrollEsquerda()">🠔</button>
+            <div class="scroll-content" id="scroll-content">
+                <div class="item">
+                    <img src="imgs/discos/1.png" alt="">
+                    <p>A Melhor Música do Mundo</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/2.png" alt="">
+                    <p>Bella e o Olmo da Bruxa</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/3.png" alt="">
+                    <p>Ventos do Norte (Terral)</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/4.png" alt="">
+                    <p>Lunar</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/5.png" alt="">
+                    <p>de las veces que solía pensar en nós (incluso durmiendo)</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/6.png" alt="">
+                    <p>Valentina</p>
+                </div>
+                <div class="item">
+                    <img src="imgs/discos/7.png" alt="">
+                    <p>Neon Genesis Evangelion II</p>
+                </div>
+            </div>
+            <button class="scroll-btn right" onclick="scrollDireita()">🠖</button>
+        </div>
+    </div>
+    
+    <div class="modal-container">
+        <div id="modal" class="modal">
+            <div class="modalHeader">
+                <img class="logoModal" src="imgs/logoBella.png" alt="">
+            </div>
+            
+            <div class="modalBody">
+                <p>Instagram: <a href="https://https://www.instagram.com/bellaeolmo/" target="_blank"> @bellaolmo </a></p>
+                <p>Bluesky: <a href="https://bsky.app/profile/bellaeolmo.bsky.social" target="_blank"> @bellaeoolmo.bsky.social </a></p>
+                <button id="close-modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>
